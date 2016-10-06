@@ -41,9 +41,6 @@
 			$this->romanNumerals[11] = $customI . $customV;
 			$this->romanNumerals[10] = $customV;
 			$this->romanNumerals[9] = $customI . "X";
-			// 
-			// Check if the user supplied a custom character for 5, and if so replace the original.
-			$this->romanNumerals[5] = $customV;
 		}
 		
 		public function reset() {
