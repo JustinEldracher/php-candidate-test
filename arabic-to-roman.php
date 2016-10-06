@@ -26,7 +26,7 @@
 		protected $romanNumerals = array("M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I");
 		protected $romanValues = array(1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1);
 		
-		public function __construct($number = null, $customI = null, $customV = null) {
+		public function __construct($number = null, $customI, $customV) {
 			$this->setUp($number, $customI, $customV);
 		}
 		
@@ -44,8 +44,10 @@
 		}
 		
 		public function reset() {
-			$this->romanNumerals[6] = "I";
-			$this->romanNumerals[5] = "V";
+			$this->romanNumerals[12] = "I";
+			$this->romanNumerals[11] = "IV";
+			$this->romanNumerals[10] = "V";
+			$this->romanNumerals[9] = "IX";
 		}
 		
 		public function convertAR() {
